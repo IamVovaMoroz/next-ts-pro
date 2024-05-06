@@ -16,7 +16,7 @@ export function Hero() {
           Start monitoring your website like a pro
         </h1>
         <p className="text-center pt-6 text-[#36485C] lg:text-[18px] lg:leading-7">
-          Get a birds eye view with our customizable dashboard. Stay on top of
+          Get a bird&rsquo;s eye view with our customizable dashboard. Stay on top of
           things! Revamp your work process with our game-changing feature. Boost
           productivity and efficiency!
         </p>
@@ -53,11 +53,11 @@ export function Hero() {
               Trusted by these companies
             </p>
             <div className="grid grid-cols-3 items-center justify-center justify-items-center px-[20px] align-middle  lg:grid-cols-5">
-              <Image src={Google} alt="" />
-              <Image src={Slack} alt="" />
-              <Image src={Truspilot} alt="" />
-              <Image src={Cnn} alt="" />
-              <Image src={Cluth} alt="" />
+              <Image src={Google} alt="Google img" />
+              <Image src={Slack} alt="Slack img" />
+              <Image src={Truspilot} alt="Truspilot img" />
+              <Image src={Cnn} alt="Cnn img" />
+              <Image src={Cluth} alt="Cluth img" />
             </div>
           </div>
         </div>

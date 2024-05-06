@@ -13,12 +13,10 @@ export function Hero() {
     <div className="pt-4 lg:pt-10">
       <div className="px-[20px] lg:px-[280px]">
         <h1 className="text-center text-[32px] leading-[40px] font-medium text-[#172026] lg:text-[64px] lg:leading-[72px]">
-          Start monitoring your website like a pro
+          Empower Your Web Presence like a Pro
         </h1>
         <p className="text-center pt-6 text-[#36485C] lg:text-[18px] lg:leading-7">
-          Get a bird&rsquo;s eye view with our customizable dashboard. Stay on top of
-          things! Revamp your work process with our game-changing feature. Boost
-          productivity and efficiency!
+          Elevate your website management with our intuitive dashboard. Take control and stay ahead of the curve! Unlock new levels of productivity and efficiency with our innovative tools and features.
         </p>
 
         <div className="flex w-full pt-8 justify-center gap-x-6 ">

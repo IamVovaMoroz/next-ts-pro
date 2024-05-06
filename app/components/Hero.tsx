@@ -45,7 +45,7 @@ export function Hero() {
           <Image
             src={HeroImage}
             alt="hero image"
-            className="-ml-4 h-[310px] sm:-mb-20 sm:h-[400px] lg:-mb-28 lg:h-auto xl:w-[70%] "
+            className="-ml-4 h-[310px] sm:-mb-20 sm:h-[400px] lg:-mb-28 lg:h-auto xl:w-[70%] lg:max-w-[800px]"
           />
 
           <div className="flex w-full flex-col items-center lg:container lg:flex-row lg:justify-between lg:px-20">

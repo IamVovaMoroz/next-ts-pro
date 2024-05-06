@@ -29,9 +29,7 @@ export function Features() {
             className="pt-[24px] sm:hidden"
           />
           <p className="py-[24px] text-[#36485C] lg:text-[18px]">
-            Stay on top of things and revamp your work process with our
-            game-changing feature. Get a bird&rsquo;s eye view with our customizable
-            dashboard.
+            Keep track of your sales effortlessly and enhance your workflow with our innovative feature. Gain valuable insights through our customizable dashboard to stay ahead in the competitive market.
           </p>
 
           <ul className="flex flex-col gap-y-3 lg:text-[18px]">
@@ -39,19 +37,19 @@ export function Features() {
               <span>
                 <Image src={Check} alt="Checkmark" />
               </span>
-              Lorem ipsum dolor sit amet
+              Optimize sales strategies and maximize revenue
             </li>
             <li className="flex items-center gap-x-2 text-[#36485C]">
               <span>
                 <Image src={Check} alt="Checkmark" />
               </span>
-              Lorem ipsum dolor sit amet
+              Streamline sales processes for increased efficiency
             </li>
             <li className="flex items-center gap-x-2 text-[#36485C]">
               <span>
                 <Image src={Check} alt="Checkmark" />
               </span>
-              Lorem ipsum dolor sit amet
+              Identify opportunities and make informed decisions
             </li>
           </ul>
 
@@ -75,7 +73,7 @@ export function Features() {
             Customer Support
           </h3>
           <h1 className="pt-[12px] text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px]">
-            Get in touch with your customers
+          Connect with your customers
           </h1>
           <Image
             src={Feature2}
@@ -83,9 +81,7 @@ export function Features() {
             className="pt-[24px] sm:hidden"
           />
           <p className="py-[24px] text-[#36485C] lg:text-[18px]">
-            Stay on top of things and revamp your work process with our
-            game-changing feature. Get a bird&rsquo;s eye view with our customizable
-            dashboard.
+          Enhance your customer support experience with our efficient feature. Stay connected with your customers and provide them with timely assistance to build long-lasting relationships.
           </p>
 
           <ul className="flex flex-col gap-y-3 lg:text-[18px]">
@@ -93,19 +89,19 @@ export function Features() {
               <span>
                 <Image src={Check} alt="Checkmark" />
               </span>
-              Lorem ipsum dolor sit amet
+              Ensure prompt and effective customer assistance
             </li>
             <li className="flex items-center gap-x-2 text-[#36485C]">
               <span>
                 <Image src={Check} alt="Checkmark" />
               </span>
-              Lorem ipsum dolor sit amet
+              Foster trust and loyalty with personalized support
             </li>
             <li className="flex items-center gap-x-2 text-[#36485C]">
               <span>
                 <Image src={Check} alt="Checkmark" />
               </span>
-              Lorem ipsum dolor sit amet
+              Resolve issues efficiently to maintain customer satisfaction
             </li>
           </ul>
 
@@ -137,19 +133,17 @@ export function Features() {
             className="pt-[24px] sm:hidden"
           />
           <p className="py-[24px] text-[#36485C] lg:text-[18px]">
-            Stay on top of things and revamp your work process with our
-            game-changing feature. Get a bird&rsquo;s eye view with our customizable
-            dashboard.
+          Track the growth of your website and monitor new subscribers effectively with our feature. Gain insights into user engagement and optimize your strategies for sustainable growth.
           </p>
 
           <div className="flex w-full gap-x-[24px] ">
             <div className="w-1/2 flex flex-col gap-y-3">
               <h3 className="text-[20px] font-medium text-[#172026]">100+</h3>
-              <p className="text-[#36485C] ">Lorem ipsum dolor sit</p>
+              <p className="text-[#36485C] ">Active Subscribers</p>
             </div>
             <div className="w-1/2 flex flex-col gap-y-3">
               <h3 className="text-[20px] font-medium text-[#172026]">800+</h3>
-              <p className="text-[#36485C]">Conse adipiscing elit</p>
+              <p className="text-[#36485C]">Total Interactions</p>
             </div>
           </div>
 

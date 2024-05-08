@@ -13,7 +13,7 @@ export function Pricing() {
 				<div className='w-full rounded-[8px] bg-[#F5F4FF] p-6 flex flex-col lg:justify-between'>
 					<div>
 						<h3 className='font-medium text-[#4328EB] text-[18px] lg:text-xl'>Free Trial</h3>
-						<p className='text-[#36485C] pt-[12px] lg:text-[18px]'>Perfect for testing the waters</p>
+						<p className='text-[#36485C] pt-[12px] lg:text-[18px]'>Perfect for testing</p>
 						<h2 className='pt-4 text-2xl font-medium lg:text-[42px]'>0$<span className='text-[#5F7896]'>/mo</span></h2>
 
 						<ul className='flex flex-col gap-y-2 pt-4 text-[#5F7896]'>

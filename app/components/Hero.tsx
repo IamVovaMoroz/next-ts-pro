@@ -23,12 +23,12 @@ export function Hero() {
           <button className="bg-[#4328EB] w-1/2 py-4 px-8 text-white rounded-[4px] lg:w-fit">
             Try for free
           </button>
-          <button className="w-1/2 text-[#4328EB] flex items-center justify-center gap-x-2 lg:w-fit">
+          <a href="#pricing" className="w-1/2 text-[#4328EB] flex items-center justify-center gap-x-2 lg:w-fit">
             View Pricing
             <span>
               <Image src={BlurArrow} alt="Learn more" />
             </span>
-          </button>
+          </a>
         </div>
       </div>
 

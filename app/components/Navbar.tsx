@@ -1,47 +1,69 @@
+"use client";
+import React, { useState } from 'react';
 import Image from 'next/image';
-import Logo from '../../public/assets/Logo.svg'
-import User from '../../public/assets/User.svg'
-import Menu from '../../public/assets/Menu.svg'
+import Logo from '../../public/assets/Logo.svg';
+import User from '../../public/assets/User.svg';
+import Menu from '../../public/assets/Menu.svg';
 
 const navLinks = [
-	{ name: 'Features', to: 'features' },
-	{ name: 'Pricing', to: 'pricing' },
-	{ name: 'FAQ', to: 'faq' },
-	{ name: 'Contact us', to: 'contact us' },
-
-]
+  { name: 'Features', to: 'features' },
+  { name: 'Pricing', to: 'pricing' },
+  { name: 'FAQ', to: 'faq' },
+  { name: 'Contact us', to: 'contact us' },
+];
 
 export function Navbar() {
-	return (
-		<nav className="flex w-full items-center justify-between px-[20px] py-[16px] lg:container lg:mx-auto lg:px-20">
-			<div className="flex items-center">
-				<Image src={Logo} alt="Logo" />
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-				<div className="hidden lg:flex pl-[74px] gap-x-[56px]">
-					{navLinks.map((item, index) => (
-						<a className="text-[#36485C] font-medium" key={index} href={`#${item.to}`}>
-							{item.name}
-						</a>
-					))}
-				</div>
-			</div>
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-			<div className="flex gap-x-5">
-				<p className="hidden lg:block font-medium text-[#36485C] pr-[56px]">
-					Open an Account
-				</p>
+  return (
+    <nav className="flex w-full items-center justify-between px-[20px] py-[16px] lg:container lg:mx-auto lg:px-20">
+      <div className="flex items-center">
+        <Image src={Logo} alt="Logo" />
 
-				<div className="flex items-center gap-x-2">
-					<Image src={User} alt="User Profile" />
-					<span className="hidden font-medium text-[#36485C] lg:block">
-						Sign in
-					</span>
-				</div>
+        <div className="hidden md:flex pl-[74px] gap-x-[56px]">
+          {navLinks.map((item, index) => (
+            <a className="text-[#36485C] font-medium" key={index} href={`#${item.to}`}>
+              {item.name}
+            </a>
+          ))}
+        </div>
+      </div>
 
-				<Image src={Menu} alt="Menu Button" className="lg:hidden" />
-			</div>
-		</nav>
-	)
+      <div className="flex gap-x-5">
+        <p className="hidden lg:block font-medium text-[#36485C] pr-[56px]">
+          Open an Account
+        </p>
+
+        <div className="flex items-center gap-x-2">
+          <Image src={User} alt="User Profile" />
+          <span className="hidden font-medium text-[#36485C] lg:block">
+            Sign in
+          </span>
+        </div>
+
+        <div className="lg:hidden" onClick={toggleMenu}>
+          <Image src={Menu} alt="Menu Button" />
+        </div>
+
+        {isMenuOpen && (
+          <div className="md:hidden absolute top-16 left-0 w-full bg-white py-4 px-6 flex flex-col items-center ">
+            {navLinks.map((item, index) => (
+              <a
+                key={index}
+                href={`#${item.to}`}
+                className="text-[#36485C] font-medium text-[20px] py-2"
+              >
+                {item.name}
+              </a>
+            ))}
+        
+          </div>
+        )}
+      </div>
+    </nav>
+  );
 }
-
-

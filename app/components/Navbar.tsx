@@ -4,10 +4,11 @@ import User from '../../public/assets/User.svg'
 import Menu from '../../public/assets/Menu.svg'
 
 const navLinks = [
-	{ name: 'Features' },
-	{ name: 'Pricing' },
-	{ name: 'Enterprise' },
-	{ name: 'Careers' },
+	{ name: 'Features', to: 'features' },
+	{ name: 'Pricing', to: 'pricing' },
+	{ name: 'FAQ', to: 'faq' },
+	{ name: 'Contact us', to: 'contact us' },
+
 ]
 
 export function Navbar() {
@@ -18,9 +19,9 @@ export function Navbar() {
 
 				<div className="hidden lg:flex pl-[74px] gap-x-[56px]">
 					{navLinks.map((item, index) => (
-						<p className="text-[#36485C] font-medium" key={index}>
+						<a className="text-[#36485C] font-medium" key={index} href={`#${item.to}`}>
 							{item.name}
-						</p>
+						</a>
 					))}
 				</div>
 			</div>

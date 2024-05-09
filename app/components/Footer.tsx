@@ -13,10 +13,10 @@ export function Footer() {
 			</div>
 
 			<ul className="flex flex-col items-center gap-y-[32px] pt-[56px] text-[#36485C] sm:flex-row sm:justify-center sm:gap-x-5 sm:pt-5">
-				<li>Features</li>
-				<li>Pricing</li>
-				<li>Enterprise</li>
-				<li>Careers</li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#pricing">Pricing</a></li>
+				<li><a href="#faq">FAQ</a></li>
+				<li><a href="#contact us">Contact us</a></li>
 			</ul>
 
 			<p className="pt-[56px] text-center text-[14px] font-medium text-[#5F7896] sm:pt-5">

@@ -5,7 +5,7 @@ import Check1 from '../../public/assets/check1.svg'
 
 export function Pricing() {
 	return (
-		<div className='py-[48px] lg:py-[60px]'>
+		<div id="pricing" className='py-[48px] lg:py-[60px]'>
 			<h1 className='text-[#172026] text-center text-[24px] font-medium text-2xl lg:text-[42px]'>Flexible plans for you</h1>
 			<p className='text-[#36485C] pt-[16px] pb-[40px] text-center  lg:text-[18px]'>No hidden fees!</p>
 

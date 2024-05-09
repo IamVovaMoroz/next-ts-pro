@@ -6,6 +6,7 @@ import { Faq } from './components/Faq';
 import { Pricing } from './components/Pricing';
 import { Cta } from './components/Cta';
 import { Footer } from './components/Footer';
+import FormDemo from './components/Form';
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
       <Features/>
       <Faq/>
       <Pricing/>
+      <FormDemo/>
       <Cta/>
-      <Footer/>
+           <Footer/>
       </div>
     </>
   );

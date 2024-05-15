@@ -2,7 +2,7 @@
 import React from 'react';
 import * as Form from '@radix-ui/react-form';
 
-const FormDemo = () => (
+export const FormDemo = () => (
   <div id='contact us' className='flex items-center justify-center'>
     <div className='w-full rounded-[16px] py-[48px] px-[40px] text-center bg-[#E3F1FF]'>
       <div className='font-medium text-[#4328EB] text-[18px] lg:text-xl'>
@@ -53,4 +53,4 @@ const FormDemo = () => (
   </div>
 );
 
-export default FormDemo;
+

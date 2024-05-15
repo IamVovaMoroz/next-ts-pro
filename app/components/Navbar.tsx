@@ -1,9 +1,11 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Logo from '../../public/assets/Logo.svg';
 import User from '../../public/assets/User.svg';
 import Menu from '../../public/assets/Menu.svg';
+import { useUser, SignedIn, SignedOut, SignInButton, SignOutButton } from '@clerk/nextjs';
+
 
 const navLinks = [
   { name: 'Features', to: 'features' },
@@ -14,6 +16,7 @@ const navLinks = [
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user } = useUser();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -34,15 +37,29 @@ export function Navbar() {
       </div>
 
       <div className="flex gap-x-5">
-        <p className="hidden lg:block font-medium text-[#36485C] pr-[56px]">
-          Open an Account
-        </p>
+      
 
         <div className="flex items-center gap-x-2">
-          <Image src={User} alt="User Profile" />
-          <span className="hidden font-medium text-[#36485C] lg:block">
-            Sign in
-          </span>
+          
+       
+        <SignedIn>
+            <Image src={User} alt="User Profile" />
+            <span className="hidden font-medium text-[#36485C] lg:block">
+              Welcome, {user?.firstName}!
+            </span>
+            <SignOutButton>
+              <span className="hidden font-medium text-[#36485C] lg:block cursor-pointer ">
+                Sign out
+              </span>
+            </SignOutButton>
+          </SignedIn>
+          <SignedOut>
+            <SignInButton>
+              <span className="hidden font-medium text-[#36485C] lg:block cursor-pointer ">
+                Sign in
+              </span>
+            </SignInButton>
+          </SignedOut>
         </div>
 
         <div className="lg:hidden" onClick={toggleMenu}>
@@ -60,7 +77,7 @@ export function Navbar() {
                 {item.name}
               </a>
             ))}
-        
+
           </div>
         )}
       </div>

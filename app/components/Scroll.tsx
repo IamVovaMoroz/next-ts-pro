@@ -2,7 +2,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 
-export default function ScrollToTopButton() {
+export function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {

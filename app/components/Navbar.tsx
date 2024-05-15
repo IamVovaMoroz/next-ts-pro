@@ -27,7 +27,7 @@ export function Navbar() {
       <div className="flex items-center">
         <Image src={Logo} alt="Logo" />
 
-        <div className="hidden md:flex pl-[74px] gap-x-[56px]">
+        <div className="hidden md:flex lg:pl-[74px] gap-x-[56px] md:pl-[25px]">
           {navLinks.map((item, index) => (
             <a className="text-[#36485C] font-medium" key={index} href={`#${item.to}`}>
               {item.name}
@@ -36,33 +36,29 @@ export function Navbar() {
         </div>
       </div>
 
-      <div className="flex gap-x-5">
-      
-
+      <div className="flex gap-x-3 pl-2">
         <div className="flex items-center gap-x-2">
-          
-       
-        <SignedIn>
+          <SignedIn>
             <Image src={User} alt="User Profile" />
-            <span className="hidden font-medium text-[#36485C] lg:block">
+            <span className="font-medium text-[#36485C]">
               Welcome, {user?.firstName}!
             </span>
             <SignOutButton>
-              <span className="hidden font-medium text-[#36485C] lg:block cursor-pointer ">
+              <span className="font-medium text-[#36485C] cursor-pointer mr-1">
                 Sign out
               </span>
             </SignOutButton>
           </SignedIn>
           <SignedOut>
             <SignInButton>
-              <span className="hidden font-medium text-[#36485C] lg:block cursor-pointer ">
+              <span className="font-medium text-[#36485C] cursor-pointer">
                 Sign in
               </span>
             </SignInButton>
           </SignedOut>
         </div>
 
-        <div className="lg:hidden" onClick={toggleMenu}>
+        <div className="md:hidden" onClick={toggleMenu}>
           <Image src={Menu} alt="Menu Button" />
         </div>
 
@@ -77,7 +73,6 @@ export function Navbar() {
                 {item.name}
               </a>
             ))}
-
           </div>
         )}
       </div>

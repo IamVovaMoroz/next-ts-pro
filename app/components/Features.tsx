@@ -53,12 +53,12 @@ export function Features() {
             </li>
           </ul>
 
-          <p className="flex items-center gap-x-2 pt-[24px] font-medium text-[#0085FF] lg:text-[18px]">
+          <a href="#faq" className="flex items-center gap-x-2 pt-[24px] font-medium text-[#0085FF] lg:text-[18px]">
             Learn More{" "}
             <span>
               <Image src={bluebutton} alt="Learn more" />
             </span>
-          </p>
+          </a>
         </div>
       </div>
 
@@ -105,12 +105,12 @@ export function Features() {
             </li>
           </ul>
 
-          <p className="flex items-center gap-x-2 pt-[24px] font-medium text-[#00A424] lg:text-[18px]">
+          <a href="#faq" className="flex items-center gap-x-2 pt-[24px] font-medium text-[#00A424] lg:text-[18px]">
             Learn More{" "}
             <span>
               <Image src={greenButton} alt="Learn more" />
             </span>
-          </p>
+          </a>
         </div>
       </div>
 
@@ -147,12 +147,12 @@ export function Features() {
             </div>
           </div>
 
-          <p className="flex items-center gap-x-2 pt-[24px] font-medium text-[#EB2891] lg:text-[18px]">
+          <a href="#faq" className="flex items-center gap-x-2 pt-[24px] font-medium text-[#EB2891] lg:text-[18px]">
             Learn More{" "}
             <span>
               <Image src={pinkButton} alt="Learn more" />
             </span>
-          </p>
+          </a>
         </div>
       </div>
     </div>

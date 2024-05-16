@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Logo from "../../public/assets/Logo.svg";
-import Facebook from "../../public/assets/Facebook.svg";
 import Twitter from "../../public/assets/X.svg";
 import Feed from "../../public/assets/Feed.svg";
 
@@ -23,8 +22,11 @@ export function Footer() {
 				&copy; Copyright 2024. Web Watcher Pro. All rights reserved.
 			</p>
 
-			<div className="flex items-center justify-center gap-x-[56px] pt-[40px]">
-				<Image src={Facebook} alt="Facebook" />
+			<div className="flex items-center justify-center gap-x-[56px] pt-[40px] cursor-pointer">
+				
+				<a href="https://www.facebook.com/volodymyr.moroz.83">
+					<Image src="/assets/Facebook.svg" alt="Facebook" width={21} height={20} />
+				</a>
 				<Image src={Feed} alt="Feed" />
 				<Image src={Twitter} alt="Twitter" />
 			</div>

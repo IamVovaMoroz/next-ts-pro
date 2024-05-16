@@ -4,8 +4,3 @@ export default function Page(){
 	return <SignUp />;
 }
 
-// const Page = () => {
-// 	return <SignUp />;
-// }
-
-// export default Page

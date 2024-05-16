@@ -11,7 +11,6 @@ export function Cta() {
 				<a href="#contact us" className='flex w-full items-center justify-center gap-x-3 mt-[32px] text-white font-medium lg:w-fit lg:mt-0'>Contact us{' '}
 				<span>
 					<Image src={Arrow} alt='Learn more' />
-					{/* <Image src="/assets/arrow.png" alt="Learn more" width={27} height={26} /> */}
 				</span></a>
 			</div>
 		</div>

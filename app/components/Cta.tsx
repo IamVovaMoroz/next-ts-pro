@@ -10,8 +10,8 @@ export function Cta() {
 				<a href="#pricing" className='py-[16px] px-[32px] bg-white rounded-[4px] text-pink-500 w-fit font-medium'>Start Trial</a>
 				<a href="#contact us" className='flex w-full items-center justify-center gap-x-3 mt-[32px] text-white font-medium lg:w-fit lg:mt-0'>Contact us{' '}
 				<span>
-					{/* <Image src={Arrow} alt='Learn more' /> */}
-					<Image src="/assets/arrow.png" alt="Learn more" width={27} height={26} />
+					<Image src={Arrow} alt='Learn more' />
+					{/* <Image src="/assets/arrow.png" alt="Learn more" width={27} height={26} /> */}
 				</span></a>
 			</div>
 		</div>

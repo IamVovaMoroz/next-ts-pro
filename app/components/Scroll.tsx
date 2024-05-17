@@ -1,4 +1,3 @@
-
 "use client";
 import { useState, useEffect } from 'react';
 
@@ -7,7 +6,7 @@ export function ScrollToTopButton() {
 
   useEffect(() => {
     function handleScroll() {
-      if (window.pageYOffset > 100) {
+      if (window.scrollY > 100) {
         setIsVisible(true);
       } else {
         setIsVisible(false);

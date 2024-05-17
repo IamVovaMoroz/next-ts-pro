@@ -44,24 +44,6 @@ export function Navbar() {
 						Sign in
 					</span>
 				</div>
-          {/* <SignedIn>
-            <Image src={User} alt="User Profile" />
-            <span className="font-medium text-[#36485C]">
-              Welcome, {user?.firstName}!
-            </span>
-            <SignOutButton>
-              <span className="font-medium text-[#36485C] cursor-pointer mr-1">
-                Sign out
-              </span>
-            </SignOutButton>
-          </SignedIn>
-          <SignedOut>
-            <SignInButton>
-              <span className="font-medium text-[#36485C] cursor-pointer">
-                Sign in
-              </span>
-            </SignInButton>
-          </SignedOut> */}
         </div>
 
         <div className="md:hidden" onClick={toggleMenu}>

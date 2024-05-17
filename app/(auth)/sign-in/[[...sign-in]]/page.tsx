@@ -1,9 +1,8 @@
 import { SignIn } from '@clerk/nextjs'
 
-
 export const dynamicParams = false;
 
-export function Page(){
+export default function Page(){
 	return <SignIn />;
 }
 

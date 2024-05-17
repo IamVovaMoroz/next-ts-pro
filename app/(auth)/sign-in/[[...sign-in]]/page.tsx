@@ -1,11 +1,12 @@
 import { SignIn } from '@clerk/nextjs'
-import generateStaticParams from './generateStaticParams';
+
+
 export const dynamicParams = false;
 
-
-export { generateStaticParams };
-
-export default function Page(){
+export function Page(){
 	return <SignIn />;
 }
 
+export function generateStaticParams() {
+	return [{}]; 
+}

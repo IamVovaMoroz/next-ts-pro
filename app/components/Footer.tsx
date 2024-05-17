@@ -25,11 +25,11 @@ export function Footer() {
 
 			<div className="flex items-center justify-center gap-x-[56px] pt-[40px] cursor-pointer">
 
-				{/* <a href="https://www.facebook.com/volodymyr.moroz.83">
+				<a href="https://www.facebook.com/volodymyr.moroz.83">
 					<Image src={Facebook} alt="Facebook" />
 
-				</a> */}
-				<Image src={Facebook} alt="Feed" />
+				</a>
+				
 				<Image src={Feed} alt="Feed" />
 				<Image src={Twitter} alt="Twitter" />
 			</div>

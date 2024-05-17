@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Check from '../../public/assets/check.svg'
-import Check1 from '../../public/assets/check1.svg'
+import Check from '@/public/assets/check.svg'
+import Check1 from '@/public/assets/check1.svg'
 
 
 export function Pricing() {

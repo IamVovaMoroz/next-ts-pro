@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Logo from '../../public/assets/Logo.svg';
-import User from '../../public/assets/User.svg';
-import Menu from '../../public/assets/Menu.svg';
+import Logo from '@/public/assets/Logo.svg';
+import User from '@/public/assets/User.svg';
+import Menu from '@/public/assets/Menu.svg';
 
 
 

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Arrow from '../../public/assets/arrow.png'
+import Arrow from '@/public/assets/arrow.png'
 
 export function Cta() {
 	return (

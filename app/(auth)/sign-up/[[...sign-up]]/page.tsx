@@ -6,10 +6,10 @@
 
 
 import { SignUp } from '@clerk/nextjs';
-// import generateStaticParams from './generateStaticParams'
+import generateStaticParams from './generateStaticParams'
 
-// export const dynamicParams = false;
-// export { generateStaticParams };
+export const dynamicParams = false;
+export { generateStaticParams };
 
 
 export default function Page() {

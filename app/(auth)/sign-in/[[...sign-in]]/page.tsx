@@ -6,6 +6,10 @@ export default function Page(){
 	return <SignIn />;
 }
 
-export function generateStaticParams() {
-	return [{}]; 
-}
+export async function generateStaticParams() {
+	return {
+	  paths: [],  // Нет путей для предварительной генерации
+	  fallback: true,  // Генерировать HTML на лету для неизвестных путей
+	};
+  }
+  

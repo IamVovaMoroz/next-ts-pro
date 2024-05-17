@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Logo from '../../public/assets/Logo.svg';
 import User from '../../public/assets/User.svg';
 import Menu from '../../public/assets/Menu.svg';
-// import { useUser, SignedIn, SignedOut, SignInButton, SignOutButton } from '@clerk/nextjs';
+
 
 
 const navLinks = [
@@ -16,7 +16,7 @@ const navLinks = [
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const { user } = useUser();
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);

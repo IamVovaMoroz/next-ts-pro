@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Logo from '../../public/assets/Logo.svg';
 import User from '../../public/assets/User.svg';
 import Menu from '../../public/assets/Menu.svg';
-import { useUser, SignedIn, SignedOut, SignInButton, SignOutButton } from '@clerk/nextjs';
+// import { useUser, SignedIn, SignedOut, SignInButton, SignOutButton } from '@clerk/nextjs';
 
 
 const navLinks = [
@@ -16,7 +16,7 @@ const navLinks = [
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { user } = useUser();
+  // const { user } = useUser();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -38,7 +38,7 @@ export function Navbar() {
 
       <div className="flex gap-x-3 pl-2">
         <div className="flex items-center gap-x-2">
-          <SignedIn>
+          {/* <SignedIn>
             <Image src={User} alt="User Profile" />
             <span className="font-medium text-[#36485C]">
               Welcome, {user?.firstName}!
@@ -55,7 +55,7 @@ export function Navbar() {
                 Sign in
               </span>
             </SignInButton>
-          </SignedOut>
+          </SignedOut> */}
         </div>
 
         <div className="md:hidden" onClick={toggleMenu}>

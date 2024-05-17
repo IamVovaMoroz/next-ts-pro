@@ -1,3 +1,3 @@
-export default function generateStaticParams() {
-	return [{}]; 
-  }
+// export default function generateStaticParams() {
+// 	return [{}]; 
+//   }

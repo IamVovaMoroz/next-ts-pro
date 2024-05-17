@@ -1,18 +1,11 @@
-// import { SignUp } from '@clerk/nextjs'
+import { SignUp } from '@clerk/nextjs'
 
-// export default function Page(){
-// 	return <SignUp />;
-// }
+export const dynamicParams = false;
 
+export default function Page(){
+	return <SignUp />;
+}
 
-// import { SignUp } from '@clerk/nextjs';
-// import generateStaticParams from './generateStaticParams'
-
-// export const dynamicParams = false;
-// export { generateStaticParams };
-
-
-// export default function Page() {
-// 	return <SignUp />;
-// }
-
+export function generateStaticParams() {
+	return [{}]; 
+}
